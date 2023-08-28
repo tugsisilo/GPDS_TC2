@@ -50,7 +50,8 @@ Let us get the path for all the .csv files in thisdirectory: `/home/practice_dat
 ```
 ````
 
-```{margin}
+```{tip}
+:class: margin
 - The "**" pattern means “this directory and all subdirectories, recursively”.
 ```
 (Practice_7)=
@@ -74,7 +75,8 @@ Notebook).
 ## Practice 8
 Save the first and second column of test_file.gz in folder2 as a DataFrame then save it as yourname_test_split.csv and put it in `/home/yourgroupfolder`.
 
-:::{margin}
+:::{tip}
+:class: margin
 - You can experiment with formats other than `.csv`. For example, `.parquet` is a good choice if you have categorical data.
 :::
 ::::{admonition} Steps

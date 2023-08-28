@@ -1,7 +1,8 @@
 (lesson_1_3)=
 # Setting up VPN
 
-```{margin}
+```{tip}
+:class: margin
 - If you forgot your username and password, you can check it in the ***Intergrated Electronic Authentication System of Tohoku University**.
 https://www.srp.tohoku.ac.jp/webmtn/LoginServlet
     ```{figure} ../pictures/lesson_1_3/subid.png

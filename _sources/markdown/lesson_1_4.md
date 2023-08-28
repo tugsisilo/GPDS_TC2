@@ -51,7 +51,8 @@ Log-in using ssh with your group ID and password.
 ## Practice 1
 Print the working directory, make a folder with your name, list the folders in your group, then enter your folder.
 
-```{margin}
+```{tip}
+:class: margin
 - `pwd`: print working directory
 - `mkdir *dirname*`: make directory
 - `ls`: list files
@@ -76,7 +77,8 @@ Inside `yourname` folder, make folders called `local` and `scripts`. Then, go ba
 ## Practice 3
 Without typing, press up (and down) until you see just `cd` then ENTER. Then, try to enter your folder by typing `SPACE + (first letter of your name)` then press tab.
 
-```{margin}
+```{tip}
+:class: margin
 - `up arrow` key: show the previous command you entered
 - `down arrow` key: show the next command you entered
 - `tab` key: autocompletion
@@ -94,7 +96,8 @@ Without typing, press up (and down) until you see just `cd` then ENTER. Then, tr
 ## Practice 4
 From the `home` directory, check all the hidden files by typing `cd+SPACE+TAB+TAB`. Then, also check what folders are inside yourname folder.
 
-```{margin}
+```{tip}
+:class: margin
 - `double tab`: see inside the folder/command without pressing `ENTER`
 ```
 :::{admonition} Expected output

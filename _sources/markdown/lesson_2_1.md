@@ -9,14 +9,17 @@
 
 ## Starting and Accessing Jupyter Notebook
 ### Practice 1: Start Jupyter Notebook
-Log-in to the remote machine and activate your virtual environment.
-Then, start Jupyter Notebook to obtain the notebook link.
-
-```{margin}
+```{tip}
+:class: margin
 - Sometimes you might not be able to activate your virtual environment because of another Anaconda installation. In that case, please make a new virtual environment (see [Lesson 1.5](lesson_1_5))
 ```
 
-```{margin}
+Log-in to the remote machine and activate your virtual environment.
+Then, start Jupyter Notebook to obtain the notebook link.
+
+
+```{tip}
+:class: margin
 - `jupyter notebook --no-browser --port=8888`: start up the jupyter notebook on port 8888
 ```
 
@@ -39,7 +42,8 @@ Then, start Jupyter Notebook to obtain the notebook link.
 
 :::{tab-item} Mac
 :sync: key2
-```{margin}
+```{tip}
+:class: margin
 - `ssh -N -f -L localhost:YYYY:localhost:XXXX *groupname*@130.34.234.40`: forward port XXXX to YYYY and listen to it
 ```
 Open another Command Prompt (Shell > New Window). In order to run Jupyter Notebook from your browser, forward this to port 8888 of your machine. (Try 8889, 8890, etc. if it gives error)
@@ -84,7 +88,8 @@ Open the Menu in the upper left corner, save the previous Notebook as `yourname_
 ### Practice 6: Running Python file on Server
 Open a new terminal window. After activating your virtual environment, run the python file you just made.
 
-```{margin}
+```{tip}
+:class: margin
 - `python *filepath*`: run python file
 ```
 

@@ -3,7 +3,8 @@
 ::::{tab-set}
 :::{tab-item} Windows
 :sync: key1
-```{margin}
+```{tip}
+:class: margin
 - If you have already set up PuTTY, WinSCP should be able to import the settings and fill in `Host Name` automatically.
 ```
 1. For the file transfer client, we recommend downloading **WinSCP**: https://winscp.net/eng/download.php

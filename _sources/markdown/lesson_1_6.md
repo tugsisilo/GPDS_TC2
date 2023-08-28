@@ -6,11 +6,12 @@ Anaconda is a Python and R distribution. It aims to provide everything you need 
 ### Practice 5
 Make sure you are inside `yourname` folder. Download the Anaconda installer by copying the following link and pasting it in your terminal. 
 
-```{margin}
+```{tip}
+:class: margin
 - `wget`: download file
 ```
 ```{admonition} Url
-https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh
+https://repo.anaconda.com/archive/Anaconda3-2023.07-2-Linux-x86_64.sh
 ```
 
 :::{admonition} Expected output
@@ -34,7 +35,8 @@ If you see Anaconda3-2022.05-Linux-x86_64.sh, this means you downloaded the file
 ### Practice 7
 Using your mouse, you can select the installer file name then copy it using `Ctrl+C`. Then, use `sh filename` to run the Anaconda installer.
 
-```{margin}
+```{tip}
+:class: margin
 - `sh *filename*`: execute/run file
 ```
 :::{admonition} Expected output
@@ -61,7 +63,8 @@ Don't install Anaconda in `/home/*groupname*/anaconda3`. Set the installation fo
 ### Practice 9
 Start with typing `source .bashrc` from home folder to launch the shell instance. Then, use `conda -V` and `conda update conda` to update the current version.
 
-```{margin}
+```{tip}
+:class: margin
 - `source .bashrc`: launch an interactive shell instance
 - `conda -V`: check `conda` is installed and in your `PATH`
 - `conda update conda`: check `conda` is up to date
@@ -84,7 +87,8 @@ The main purpose of Python **virtual environments** is to create an isolated env
 ### Practice 10
 Using `conda`, make a new virtual environment (`yournameenv`) and activate it.
 
-```{margin}
+```{tip}
+:class: margin
 - `conda create -n *yourenvname* python=3.x anaconda`: create new virtual environment with Python 3.x.
 - `conda activate *yourenvname*`: activate your virtual environment
 ```
@@ -96,14 +100,13 @@ Using `conda`, make a new virtual environment (`yournameenv`) and activate it.
 ```
 ```{figure} ../pictures/lesson_1_6/Practice_10_3.png
 ```
-```{figure} ../pictures/lesson_1_6/Practice_10_4.png
-```
 :::
 
 ### Practice 11
 Try to `exit` the current server to go back to your computer. Try to enter again with up arrow, and re-activate your virtual environment. Finally, exit one more time.
 
-```{margin}
+```{tip}
+:class: margin
 - `exit`: exit the current active server
 ```
 :::{admonition} Expected output
