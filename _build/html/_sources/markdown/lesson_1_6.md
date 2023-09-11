@@ -4,7 +4,7 @@
 Anaconda is a Python and R distribution. It aims to provide everything you need for data science "out of the box".
 
 ### Practice 5
-Make sure you are inside `yourname` folder. Download the Anaconda installer by copying the following link and pasting it in your terminal. 
+Make sure you are inside `yourname` folder. Download the Anaconda installer by copying the following link and pasting it into your terminal. 
 
 ```{tip}
 :class: margin
@@ -24,7 +24,7 @@ https://repo.anaconda.com/archive/Anaconda3-2023.07-2-Linux-x86_64.sh
 :::
 
 ### Practice 6
-To see if you download it correctly, try to list the contents of your folder now using **ls**.
+To see if you downloaded it correctly, try to list the contents of your folder now using **ls**.
 :::{admonition} Expected output
 ```{figure} ../pictures/lesson_1_6/Practice_6.png
 ```
@@ -33,7 +33,7 @@ To see if you download it correctly, try to list the contents of your folder now
 If you see Anaconda3-2022.05-Linux-x86_64.sh, this means you downloaded the file correctly.
 
 ### Practice 7
-Using your mouse, you can select the installer file name then copy it using `Ctrl+C`. Then, use `sh filename` to run the Anaconda installer.
+Using your mouse, you can select the installer file name and then copy it using `Ctrl+C`. Then, use `sh filename` to run the Anaconda installer.
 
 ```{tip}
 :class: margin
@@ -61,7 +61,7 @@ Don't install Anaconda in `/home/*groupname*/anaconda3`. Set the installation fo
 ```
 :::
 ### Practice 9
-Start with typing `source .bashrc` from home folder to launch the shell instance. Then, use `conda -V` and `conda update conda` to update the current version.
+Start by typing `source .bashrc` from the home folder to launch the shell instance. Then, use `conda -V` and `conda update conda` to update the current version.
 
 ```{tip}
 :class: margin
@@ -81,8 +81,12 @@ Start with typing `source .bashrc` from home folder to launch the shell instance
 ```
 :::
 
-## Setting up virtual environment
+## Setting up a virtual environment
 The main purpose of Python **virtual environments** is to create an isolated environment for Python projects. This means that each project can have its own dependencies, regardless of what dependencies every other project has.
+
+```{warning}
+Before you proceed, make sure all your teammates have finished Practice 5-9.
+```
 
 ### Practice 10
 Using `conda`, make a new virtual environment (`yournameenv`) and activate it.
