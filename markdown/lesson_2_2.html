@@ -366,9 +366,11 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#benefits-of-pathlib-library">Benefits of <strong>pathlib</strong> library</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#useful-methods">Useful Methods</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-7">Practice 7</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-8">Practice 8</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#useful-methods">Useful Methods</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-7">Practice 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-8">Practice 8</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -383,12 +385,12 @@ document.write(`
   <div class="tex2jax_ignore mathjax_ignore section" id="path-in-python">
 <span id="lesson-2-2"></span><h1>Path in Python<a class="headerlink" href="#path-in-python" title="Permalink to this headline">#</a></h1>
 <p>One important task when dealing with batches of data is accessing and reading files in
-folders. In Python, there are some libraries that can be used to handle filesystem paths such as <code class="docutils literal notranslate"><span class="pre">os</span></code> and <code class="docutils literal notranslate"><span class="pre">glob</span></code> but here we will focus on <code class="docutils literal notranslate"><span class="pre">pathlib</span></code> library.
+folders. In Python, some libraries can be used to handle filesystem paths such as <code class="docutils literal notranslate"><span class="pre">os</span></code> and <code class="docutils literal notranslate"><span class="pre">glob</span></code> but here we will focus on <code class="docutils literal notranslate"><span class="pre">pathlib</span></code> library.
 Feel free to use <code class="docutils literal notranslate"><span class="pre">os</span></code> and <code class="docutils literal notranslate"><span class="pre">glob</span></code> library if you are already familiar with them.</p>
 <div class="section" id="benefits-of-pathlib-library">
 <h2>Benefits of <strong>pathlib</strong> library<a class="headerlink" href="#benefits-of-pathlib-library" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
-<li><p>No more cumbersome use of os and os.path functions.</p></li>
+<li><p>No more cumbersome use of <code class="docutils literal notranslate"><span class="pre">os</span></code> and <code class="docutils literal notranslate"><span class="pre">os.path</span></code> functions.</p></li>
 <li><p>Contains the semantics of different path types.</p></li>
 <li><p>Well-defined semantics, eliminating any ambiguities</p></li>
 </ol>
@@ -453,15 +455,14 @@ Feel free to use <code class="docutils literal notranslate"><span class="pre">os
 <li><p>The “**” pattern means “this directory and all subdirectories, recursively”.</p></li>
 </ul>
 </div>
-</div>
 <div class="section" id="practice-7">
-<span id="id1"></span><h2>Practice 7<a class="headerlink" href="#practice-7" title="Permalink to this headline">#</a></h2>
+<span id="id1"></span><h3>Practice 7<a class="headerlink" href="#practice-7" title="Permalink to this headline">#</a></h3>
 <p>Make a program called <code class="docutils literal notranslate"><span class="pre">combining_files</span></code> to combine all the files starting with “text” from <code class="docutils literal notranslate"><span class="pre">folder1</span></code> and <code class="docutils literal notranslate"><span class="pre">folder2</span></code> in <code class="docutils literal notranslate"><span class="pre">/home/practice_data</span></code>. Save the combined files as <code class="docutils literal notranslate"><span class="pre">combined_files.csv</span></code> in your folder.</p>
 <div class="admonition-steps admonition">
 <p class="admonition-title">Steps</p>
 <ol class="arabic simple">
 <li><p>Make a new Notebook first. Rename the title to be <code class="docutils literal notranslate"><span class="pre">combining_files</span></code>.</p></li>
-<li><p>Use <code class="docutils literal notranslate"><span class="pre">glob</span></code> with pattern <code class="docutils literal notranslate"><span class="pre">'**/text*'</span></code> to get the list of all files started with word “text”. Save it in a variable <code class="docutils literal notranslate"><span class="pre">files_list</span></code>.</p></li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">glob</span></code> with pattern <code class="docutils literal notranslate"><span class="pre">'**/text*'</span></code> to get the list of all files starting with the word “text”. Save it in a variable <code class="docutils literal notranslate"><span class="pre">files_list</span></code>.</p></li>
 <li><p>Import <code class="docutils literal notranslate"><span class="pre">pandas</span></code> and use a list comprehension to make a list of DataFrames containing all the files in <code class="docutils literal notranslate"><span class="pre">files_list</span></code>. For example: <code class="docutils literal notranslate"><span class="pre">df_list</span> <span class="pre">=</span> <span class="pre">[pd.read_csv(file)</span> <span class="pre">for</span> <span class="pre">file</span> <span class="pre">in</span> <span class="pre">files_list]</span></code>.</p></li>
 <li><p>Use <code class="docutils literal notranslate"><span class="pre">pd.concat</span></code> to combine all the DataFrames in
 <code class="docutils literal notranslate"><span class="pre">df_list</span></code>. Save the result in variable <code class="docutils literal notranslate"><span class="pre">df</span></code>.</p></li>
@@ -475,8 +476,8 @@ Notebook).</p>
 </div>
 </div>
 <div class="section" id="practice-8">
-<h2>Practice 8<a class="headerlink" href="#practice-8" title="Permalink to this headline">#</a></h2>
-<p>Save the first and second column of test_file.gz in folder2 as a DataFrame then save it as yourname_test_split.csv and put it in <code class="docutils literal notranslate"><span class="pre">/home/yourgroupfolder</span></code>.</p>
+<h3>Practice 8<a class="headerlink" href="#practice-8" title="Permalink to this headline">#</a></h3>
+<p>Save the first and second columns of test_file.gz in folder2 as a DataFrame then save it as yourname_test_split.csv and put it in <code class="docutils literal notranslate"><span class="pre">/home/yourgroupfolder</span></code>.</p>
 <div class="margin admonition tip">
 <p class="admonition-title">Tip</p>
 <ul class="simple">
@@ -490,8 +491,9 @@ Notebook).</p>
 <li><p>Save the path for <code class="docutils literal notranslate"><span class="pre">test_file.gz</span></code> in a variable called <code class="docutils literal notranslate"><span class="pre">file_path</span></code>.</p></li>
 <li><p>Import <code class="docutils literal notranslate"><span class="pre">pandas</span></code> and read the file using <code class="docutils literal notranslate"><span class="pre">pd.read_csv(file_path,</span> <span class="pre">compression='gzip',</span> <span class="pre">header=None,</span> <span class="pre">sep='\t')</span></code>. Save it in variable <code class="docutils literal notranslate"><span class="pre">df</span></code>.</p></li>
 <li><p>Get the 1st and 2nd columns using <code class="docutils literal notranslate"><span class="pre">df.iloc</span></code>. Save it in a variable <code class="docutils literal notranslate"><span class="pre">new_df</span></code>.</p></li>
-<li><p>Use <code class="docutils literal notranslate"><span class="pre">new_df.to_csv</span></code> for saving <code class="docutils literal notranslate"><span class="pre">new_df</span></code> into a .csv file. (Not in your folder but in your group folder!)</p></li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">new_df.to_csv</span></code> to save <code class="docutils literal notranslate"><span class="pre">new_df</span></code> into a .csv file. (Not in your folder but in your group folder!)</p></li>
 </ol>
+</div>
 </div>
 </div>
 </div>
@@ -564,9 +566,11 @@ Notebook).</p>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#benefits-of-pathlib-library">Benefits of <strong>pathlib</strong> library</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#useful-methods">Useful Methods</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-7">Practice 7</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-8">Practice 8</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#useful-methods">Useful Methods</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-7">Practice 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-8">Practice 8</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

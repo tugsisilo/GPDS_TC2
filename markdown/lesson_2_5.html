@@ -366,8 +366,6 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tracing-memory-allocation">Tracing memory allocation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-13">Practice 13</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rule-of-thumb">Rule of thumb</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reserving-memory-in-virtual-machine">Reserving memory in virtual machine</a></li>
 </ul>
             </nav>
         </div>
@@ -381,8 +379,8 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="tips-on-memory-management">
 <span id="lesson-2-5"></span><h1>Tips on memory management<a class="headerlink" href="#tips-on-memory-management" title="Permalink to this headline">#</a></h1>
-<p>Since everyone will be using the same cluster, it is important to be mindful of how to reserve resources in job submission.</p>
-<p>This is especially important because this cluster machine is also being used for research purposes for PhD students and faculty members.</p>
+<p>Since everyone will be using the same cluster, it is important to be mindful of how to reserve resources in job submission.
+This is especially important because this cluster machine is also being used for research purposes for Ph.D. students and faculty members.</p>
 <div class="section" id="tracing-memory-allocation">
 <h2>Tracing memory allocation<a class="headerlink" href="#tracing-memory-allocation" title="Permalink to this headline">#</a></h2>
 <p>We will see how much memory some of the basic tasks in Python take by using the <code class="docutils literal notranslate"><span class="pre">tracemalloc</span></code> (trace memory allocation) library.</p>
@@ -414,25 +412,16 @@ document.write(`
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Bad Manner to do big computation in ds01.</p>
+<ul class="simple">
+<li><p>While using Jupyter Notebook is convenient, everyone will be running it on the login node (ds01). If the cell runs more than 30 seconds, stop it, and submit it as a job that runs a <code class="docutils literal notranslate"><span class="pre">.py</span></code>  file to the cluster.</p></li>
+<li><p>If the memory you reserve is not enough, the job will fail. Try to add 1-2 GB at a time, and if you think you will need more than 20GB, ask the instructors first.</p></li>
+</ul>
 </div>
 </div>
 <div class="section" id="practice-13">
 <h2>Practice 13<a class="headerlink" href="#practice-13" title="Permalink to this headline">#</a></h2>
 <p>Check the memory usage of your <code class="docutils literal notranslate"><span class="pre">combining_files.ipynb</span></code>. Check also the memory usage of reading the
-<code class="docutils literal notranslate"><span class="pre">test_file.gz</span></code> from <code class="docutils literal notranslate"><span class="pre">/home/practice_data/</span></code>.</p>
-<p>Provide a screenshot of the code with result.</p>
-</div>
-<div class="section" id="rule-of-thumb">
-<h2>Rule of thumb<a class="headerlink" href="#rule-of-thumb" title="Permalink to this headline">#</a></h2>
-<p>While using Jupyter Notebook is convenient, everyone will be running it on the login node (ds01).</p>
-<p>If the cell runs more than 30 seconds, stop it, and submit it as job that runs a <code class="docutils literal notranslate"><span class="pre">.py</span></code>  file to the cluster.</p>
-</div>
-<div class="section" id="reserving-memory-in-virtual-machine">
-<h2>Reserving memory in virtual machine<a class="headerlink" href="#reserving-memory-in-virtual-machine" title="Permalink to this headline">#</a></h2>
-<p>If the memory you reserve is not enough, the job will fail.</p>
-<p>Add 1-2 GB at a time if it is still not working.</p>
-<p>If you think you will need more than 20GB, ask the instructors first.</p>
+<code class="docutils literal notranslate"><span class="pre">test_file.gz</span></code> from <code class="docutils literal notranslate"><span class="pre">/home/practice_data/</span></code>. Provide a screenshot of the code with the result.</p>
 </div>
 </div>
 
@@ -496,8 +485,6 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tracing-memory-allocation">Tracing memory allocation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-13">Practice 13</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rule-of-thumb">Rule of thumb</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reserving-memory-in-virtual-machine">Reserving memory in virtual machine</a></li>
 </ul>
   </nav></div>
 

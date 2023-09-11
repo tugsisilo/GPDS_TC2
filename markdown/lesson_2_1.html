@@ -374,7 +374,7 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-vs-jupyter-notebook">Python vs Jupyter Notebook</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-4-operating-jupyter-notebook">Practice 4: Operating Jupyter Notebook</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-5-saving-jupyter-notebook-as-python-file">Practice 5: Saving Jupyter Notebook as Python file</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-5-saving-jupyter-notebook-as-a-python-file">Practice 5: Saving Jupyter Notebook as a Python file</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-6-running-python-file-on-server">Practice 6: Running Python file on Server</a></li>
 </ul>
 </li>
@@ -395,9 +395,9 @@ document.write(`
 <div class="section" id="features-of-jupyter-notebook">
 <h2>Features of Jupyter Notebook<a class="headerlink" href="#features-of-jupyter-notebook" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
-<li><p>can be run from any web browser</p></li>
-<li><p>can run cell-by-cell to understand code easier</p></li>
-<li><p>easy to host server side and useful for security</p></li>
+<li><p>Can be run from any web browser</p></li>
+<li><p>Can run cell-by-cell to understand code easier</p></li>
+<li><p>Easy to host server-side and useful for security</p></li>
 </ol>
 </div>
 <div class="section" id="starting-and-accessing-jupyter-notebook">
@@ -433,7 +433,7 @@ Then, start Jupyter Notebook to obtain the notebook link.</p>
 Windows</label><div class="sd-tab-content docutils">
 <ol class="arabic">
 <li><p>Go to SSH on the bottom of the left pane to expand the menu and then click on <strong>Tunnels</strong>.</p></li>
-<li><p>Enter the port number (<code class="docutils literal notranslate"><span class="pre">8888</span></code> in the example, try <code class="docutils literal notranslate"><span class="pre">8889</span></code>, <code class="docutils literal notranslate"><span class="pre">8890</span></code>, etc. if it gives error) which you want to use to access Jupyter on your local machine in <strong>Source port</strong>. Set the destination as <code class="docutils literal notranslate"><span class="pre">localhost:8888</span></code> where <code class="docutils literal notranslate"><span class="pre">:8888</span></code> is the number of the port that Jupyter Notebook is running on. Then click the <strong>Add</strong> button, and the ports should appear in the <strong>Forwarded ports</strong> list.</p>
+<li><p>Enter the port number (<code class="docutils literal notranslate"><span class="pre">8888</span></code> in the example, try <code class="docutils literal notranslate"><span class="pre">8889</span></code>, <code class="docutils literal notranslate"><span class="pre">8890</span></code>, etc. if it gives an error) that you want to use to access Jupyter on your local machine in <strong>Source port</strong>. Set the destination as <code class="docutils literal notranslate"><span class="pre">localhost:8888</span></code> where <code class="docutils literal notranslate"><span class="pre">:8888</span></code> is the number of the port that Jupyter Notebook is running on. Then click the <strong>Add</strong> button, and the ports should appear in the <strong>Forwarded ports</strong> list.</p>
 <div class="figure align-default">
 <img alt="../_images/putty_port.png" src="../_images/putty_port.png" />
 </div>
@@ -450,7 +450,7 @@ Mac</label><div class="sd-tab-content docutils">
 <li><p><code class="docutils literal notranslate"><span class="pre">ssh</span> <span class="pre">-N</span> <span class="pre">-f</span> <span class="pre">-L</span> <span class="pre">localhost:YYYY:localhost:XXXX</span> <span class="pre">*groupname*&#64;130.34.234.40</span></code>: forward port XXXX to YYYY and listen to it</p></li>
 </ul>
 </div>
-<p>Open another Command Prompt (Shell &gt; New Window). In order to run Jupyter Notebook from your browser, forward this to port 8888 of your machine. (Try 8889, 8890, etc. if it gives error)</p>
+<p>Open another Command Prompt (Shell &gt; New Window). In order to run Jupyter Notebook from your browser, forward this to port 8888 of your machine. (Try 8889, 8890, etc. if it gives an error)</p>
 <div class="admonition-expected-output admonition">
 <p class="admonition-title">Expected output</p>
 <div class="figure align-default">
@@ -473,7 +473,7 @@ Mac</label><div class="sd-tab-content docutils">
 </div>
 <div class="section" id="python-vs-jupyter-notebook">
 <h2>Python vs Jupyter Notebook<a class="headerlink" href="#python-vs-jupyter-notebook" title="Permalink to this headline">#</a></h2>
-<p>In Jupyter Notebook, the file is saved with extension <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>. For many purposes, sometimes
+<p>In Jupyter Notebook, the file is saved with the extension <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>. For many purposes, sometimes
 the raw python file <code class="docutils literal notranslate"><span class="pre">.py</span></code> is necessary, especially when using the cluster machine.</p>
 <p>We will try to make a simple program in both <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> and <code class="docutils literal notranslate"><span class="pre">.py</span></code>.</p>
 <div class="section" id="practice-4-operating-jupyter-notebook">
@@ -489,9 +489,9 @@ the raw python file <code class="docutils literal notranslate"><span class="pre"
 </div>
 </div>
 </div>
-<div class="section" id="practice-5-saving-jupyter-notebook-as-python-file">
-<h3>Practice 5: Saving Jupyter Notebook as Python file<a class="headerlink" href="#practice-5-saving-jupyter-notebook-as-python-file" title="Permalink to this headline">#</a></h3>
-<p>Open the Menu in the upper left corner, save the previous Notebook as <code class="docutils literal notranslate"><span class="pre">yourname_test</span></code> and download that file as <code class="docutils literal notranslate"><span class="pre">.py</span></code>. Then, drag &amp; drop the file from your PC to Jupyter page.</p>
+<div class="section" id="practice-5-saving-jupyter-notebook-as-a-python-file">
+<h3>Practice 5: Saving Jupyter Notebook as a Python file<a class="headerlink" href="#practice-5-saving-jupyter-notebook-as-a-python-file" title="Permalink to this headline">#</a></h3>
+<p>Open the Menu in the upper left corner, save the previous Notebook as <code class="docutils literal notranslate"><span class="pre">yourname_test</span></code> and download that file as <code class="docutils literal notranslate"><span class="pre">.py</span></code>. Then, drag &amp; drop the file to the Jupyter notebook interface.</p>
 <div class="admonition-expected-output admonition">
 <p class="admonition-title">Expected output</p>
 <div class="figure align-default">
@@ -507,7 +507,7 @@ the raw python file <code class="docutils literal notranslate"><span class="pre"
 </div>
 <div class="section" id="practice-6-running-python-file-on-server">
 <h3>Practice 6: Running Python file on Server<a class="headerlink" href="#practice-6-running-python-file-on-server" title="Permalink to this headline">#</a></h3>
-<p>Open a new terminal window. After activating your virtual environment, run the python file you just made.</p>
+<p>Open a new terminal window. After activating your virtual environment, run the Python file you just made.</p>
 <div class="margin admonition tip">
 <p class="admonition-title">Tip</p>
 <ul class="simple">
@@ -600,7 +600,7 @@ the raw python file <code class="docutils literal notranslate"><span class="pre"
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-vs-jupyter-notebook">Python vs Jupyter Notebook</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-4-operating-jupyter-notebook">Practice 4: Operating Jupyter Notebook</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-5-saving-jupyter-notebook-as-python-file">Practice 5: Saving Jupyter Notebook as Python file</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-5-saving-jupyter-notebook-as-a-python-file">Practice 5: Saving Jupyter Notebook as a Python file</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-6-running-python-file-on-server">Practice 6: Running Python file on Server</a></li>
 </ul>
 </li>

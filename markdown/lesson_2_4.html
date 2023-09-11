@@ -382,7 +382,7 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="job-submission">
 <span id="lesson-2-4"></span><h1>Job submission<a class="headerlink" href="#job-submission" title="Permalink to this headline">#</a></h1>
-<p>Most of the commands that we use to submit, alter, and delete jobs in the queue start with the letter q. Let’s try to perform some basic tasks related to job submission.</p>
+<p>Most of the commands that we use to submit, alter, and delete jobs in the queue start with the letter <code class="docutils literal notranslate"><span class="pre">q</span></code>. Let’s try to perform some basic tasks related to job submission.</p>
 <div class="section" id="practice-9">
 <h2>Practice 9<a class="headerlink" href="#practice-9" title="Permalink to this headline">#</a></h2>
 <p>Check the available cluster nodes and who is currently using them.</p>
@@ -401,7 +401,7 @@ document.write(`
 </div>
 <div class="section" id="practice-10">
 <h2>Practice 10<a class="headerlink" href="#practice-10" title="Permalink to this headline">#</a></h2>
-<p>Delete the <code class="docutils literal notranslate"><span class="pre">combined_files.csv</span></code> from your folder. Then, download the Jupyter Notebook in <a class="reference internal" href="lesson_2_2.html#practice-7"><span class="std std-ref"><strong>Practice 7</strong></span></a> as <code class="docutils literal notranslate"><span class="pre">combining_files.py</span></code> and put it in your script folder. Submit this file to the cluster machine and execute it using the python installed in your virtual environment.</p>
+<p>Delete the <code class="docutils literal notranslate"><span class="pre">combined_files.csv</span></code> from your folder. Then, download the Jupyter Notebook in <a class="reference internal" href="lesson_2_2.html#practice-7"><span class="std std-ref"><strong>Practice 7</strong></span></a> as <code class="docutils literal notranslate"><span class="pre">combining_files.py</span></code> and put it in your script folder. Submit this file to the cluster machine and execute it using the Python installed in your virtual environment.</p>
 <div class="admonition-submitting-job admonition">
 <p class="admonition-title">Submitting job</p>
 <style>
@@ -474,7 +474,7 @@ Wait for few seconds and run qstat again.</p>
 </div>
 </div>
 <p>Go back to Jupyter Notebook and if you do everything correctly, you will see the error file (<code class="docutils literal notranslate"><span class="pre">.e####</span></code>) and the output file (<code class="docutils literal notranslate"><span class="pre">.o####</span></code>).</p>
-<p>Since we don’t have any errors and haven’t printed any output (only writing <code class="docutils literal notranslate"><span class="pre">combined_files.csv</span></code>), both files are empty. If the job failed, you can always delete them and you will get a new one.</p>
+<p>Since we don’t have any errors and haven’t printed any output (only writing <code class="docutils literal notranslate"><span class="pre">combined_files.csv</span></code>), both files are empty. If the job fails, you can always delete it and you will get a new one.</p>
 <div class="admonition-expected-output admonition">
 <p class="admonition-title">Expected output</p>
 <div class="figure align-default">
@@ -484,7 +484,7 @@ Wait for few seconds and run qstat again.</p>
 </div>
 <div class="section" id="practice-12">
 <h2>Practice 12<a class="headerlink" href="#practice-12" title="Permalink to this headline">#</a></h2>
-<p>TTry to put in the wrong path for your virtual environment. Submit the <code class="docutils literal notranslate"><span class="pre">combining_files.py</span></code> again, check its status, then delete the job.</p>
+<p>Try to put in the wrong path for your virtual environment. Submit the <code class="docutils literal notranslate"><span class="pre">combining_files.py</span></code> again, check its status, then delete the job.</p>
 <div class="admonition-delete-job admonition">
 <p class="admonition-title">delete job</p>
 <ul class="simple">

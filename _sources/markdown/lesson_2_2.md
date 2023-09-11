@@ -1,11 +1,11 @@
 (lesson_2_2)=
 # Path in Python
 One important task when dealing with batches of data is accessing and reading files in
-folders. In Python, there are some libraries that can be used to handle filesystem paths such as `os` and `glob` but here we will focus on `pathlib` library.
+folders. In Python, some libraries can be used to handle filesystem paths such as `os` and `glob` but here we will focus on `pathlib` library.
 Feel free to use `os` and `glob` library if you are already familiar with them.
 
 ## Benefits of **pathlib** library
-1. No more cumbersome use of os and os.path functions.
+1. No more cumbersome use of `os` and `os.path` functions.
 2. Contains the semantics of different path types.
 3. Well-defined semantics, eliminating any ambiguities
 
@@ -55,12 +55,12 @@ Let us get the path for all the .csv files in thisdirectory: `/home/practice_dat
 - The "**" pattern means “this directory and all subdirectories, recursively”.
 ```
 (Practice_7)=
-## Practice 7
+### Practice 7
 Make a program called `combining_files` to combine all the files starting with "text" from `folder1` and `folder2` in `/home/practice_data`. Save the combined files as `combined_files.csv` in your folder.
 
 ::::{admonition} Steps
 1. Make a new Notebook first. Rename the title to be `combining_files`.
-2. Use `glob` with pattern `'**/text*'` to get the list of all files started with word “text". Save it in a variable `files_list`.
+2. Use `glob` with pattern `'**/text*'` to get the list of all files starting with the word "text". Save it in a variable `files_list`.
 3. Import `pandas` and use a list comprehension to make a list of DataFrames containing all the files in `files_list`. For example: `df_list = [pd.read_csv(file) for file in files_list]`.
 4. Use `pd.concat` to combine all the DataFrames in
 `df_list`. Save the result in variable `df`.
@@ -72,8 +72,8 @@ Give screenshot of the code and the content of combined_files.csv (you can open 
 Notebook).
 ```
 
-## Practice 8
-Save the first and second column of test_file.gz in folder2 as a DataFrame then save it as yourname_test_split.csv and put it in `/home/yourgroupfolder`.
+### Practice 8
+Save the first and second columns of test_file.gz in folder2 as a DataFrame then save it as yourname_test_split.csv and put it in `/home/yourgroupfolder`.
 
 :::{tip}
 :class: margin
@@ -84,5 +84,5 @@ Save the first and second column of test_file.gz in folder2 as a DataFrame then 
 2. Save the path for `test_file.gz` in a variable called `file_path`.
 3. Import `pandas` and read the file using `pd.read_csv(file_path, compression='gzip', header=None, sep='\t')`. Save it in variable `df`.
 4. Get the 1st and 2nd columns using `df.iloc`. Save it in a variable `new_df`.
-5. Use `new_df.to_csv` for saving `new_df` into a .csv file. (Not in your folder but in your group folder!)
+5. Use `new_df.to_csv` to save `new_df` into a .csv file. (Not in your folder but in your group folder!)
 ::::

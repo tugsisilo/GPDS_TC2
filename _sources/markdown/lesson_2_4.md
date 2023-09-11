@@ -1,6 +1,6 @@
 (lesson_2_4)=
 # Job submission
-Most of the commands that we use to submit, alter, and delete jobs in the queue start with the letter q. Let's try to perform some basic tasks related to job submission.
+Most of the commands that we use to submit, alter, and delete jobs in the queue start with the letter `q`. Let's try to perform some basic tasks related to job submission.
 
 ## Practice 9 
 Check the available cluster nodes and who is currently using them.
@@ -14,7 +14,7 @@ Check the available cluster nodes and who is currently using them.
 ````
 
 ## Practice 10
-Delete the `combined_files.csv` from your folder. Then, download the Jupyter Notebook in [**Practice 7**](Practice_7) as `combining_files.py` and put it in your script folder. Submit this file to the cluster machine and execute it using the python installed in your virtual environment.
+Delete the `combined_files.csv` from your folder. Then, download the Jupyter Notebook in [**Practice 7**](Practice_7) as `combining_files.py` and put it in your script folder. Submit this file to the cluster machine and execute it using the Python installed in your virtual environment.
 
 ```{admonition} Submitting job
 <style>
@@ -58,7 +58,7 @@ Wait for few seconds and run qstat again.
 ````
 Go back to Jupyter Notebook and if you do everything correctly, you will see the error file (`.e####`) and the output file (`.o####`). 
 
-Since we don't have any errors and haven't printed any output (only writing `combined_files.csv`), both files are empty. If the job failed, you can always delete them and you will get a new one.
+Since we don't have any errors and haven't printed any output (only writing `combined_files.csv`), both files are empty. If the job fails, you can always delete it and you will get a new one.
 
 ````{admonition} Expected output
 ```{figure} ../pictures/lesson_2_4/P11_3.png
@@ -66,7 +66,7 @@ Since we don't have any errors and haven't printed any output (only writing `com
 ````
 
 ## Practice 12
-TTry to put in the wrong path for your virtual environment. Submit the `combining_files.py` again, check its status, then delete the job.
+Try to put in the wrong path for your virtual environment. Submit the `combining_files.py` again, check its status, then delete the job.
 
 ````{admonition} delete job
 - `qdel *jobnumber*`: Delete the job from the queue.
